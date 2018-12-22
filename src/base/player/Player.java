@@ -67,10 +67,10 @@ public class Player extends GameObject implements Physics {
             this.destroy();
             KeyEventPress.isClicked = false;
         }
-        else {
-            this.immune = true;
-            this.immuneCouter.reset();
-        }
+//        else {
+//            this.immune = true;
+//            this.immuneCouter.reset();
+//        }
     }
 
     @Override

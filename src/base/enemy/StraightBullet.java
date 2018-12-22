@@ -24,7 +24,10 @@ public class StraightBullet extends EnemyBullet {
 
     void move(){
         Vector2D toMouse = MouseEventMotion.getVectorFromCentorToMouse();
-        this.velocity.set(toMouse).scaleThis(-1).setLength(speed).addThis(0,10);
+        if (toMouse.length() > 10) {
+            this.velocity.set(toMouse).scaleThis(-1).setLength(speed).addThis(0, 10);
+        }
+        else this.velocity.set(0,10);
     }
 
     @Override
