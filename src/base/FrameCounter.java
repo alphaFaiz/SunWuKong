@@ -12,8 +12,6 @@ public class FrameCounter {
 
 
     public boolean run() {
-        //true ~ count done
-        //false ~ not yet done
         if(count < countMax) {
             count++;
             return false;

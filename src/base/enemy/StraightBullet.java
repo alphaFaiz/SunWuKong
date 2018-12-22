@@ -19,9 +19,6 @@ public class StraightBullet extends EnemyBullet {
         ArrayList<BufferedImage> images = new ArrayList<>();
         images.add(SpriteUtils.loadImage("assets/images/enemies/bullets/kimco1.png"));
         images.add(SpriteUtils.loadImage("assets/images/enemies/bullets/kimco2.png"));
-//        images.add(SpriteUtils.loadImage("assets/images/enemies/bullets/kimco3.png"));
-//        images.add(SpriteUtils.loadImage("assets/images/enemies/bullets/kimco4.png"));
-//        images.add(SpriteUtils.loadImage("assets/images/enemies/bullets/kimco5.png"));
         this.renderer = new AnimationRenderer(images, 50);
     }
 
