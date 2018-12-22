@@ -41,7 +41,7 @@ public class Player extends GameObject implements Physics {
 //        this.renderer = new RotateRenderer(SpriteUtils.loadImage("assets/images/enemies/level0/black/0.png"));
         this.createRenderer();
         this.position.set(Settings.SCREEN_WIDTH/2, Settings.SCREEN_HEIGHT/2);
-        this.hp = 1;
+        this.hp = 10000;
         this.immuneCouter = new FrameCounter(200);
         this.immune = false;
         this.boxCollider = new BoxCollider(this.anchor,this.position, 48, 110);
@@ -55,7 +55,7 @@ public class Player extends GameObject implements Physics {
         ArrayList<BufferedImage> images = new ArrayList<>();
         images.add(SpriteUtils.loadImage("assets/images/players/straight/1.png"));
         images.add(SpriteUtils.loadImage("assets/images/players/straight/2.png"));
-        this.renderer = new RotateRenderer(images, 300);
+        this.renderer = new RotateRenderer(images, 200);
     }
 
     public void takeDamage(int damage) {

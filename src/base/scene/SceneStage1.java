@@ -30,6 +30,7 @@ public class SceneStage1 extends Scene {
         this.sound = AudioUtils.loadSound("assets/music/bgm/gameplay.wav");
         this.sound.setFramePosition(0);
         this.sound.start();
+        this.sound.loop(100);
         //this.itemGuide = GameObject.recycle(ItemGuide.class);
     }
 
